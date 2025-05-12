@@ -1,6 +1,6 @@
 describe('Home Page Tests', () => {
     it('Deve carregar a página inicial', () => {
-      cy.visit('http://localhost:8080/src/pages/index.html');
+      cy.visit('/src/pages/');
       cy.contains('Yi Sang');
     });
   });

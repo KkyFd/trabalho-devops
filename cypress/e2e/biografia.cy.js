@@ -1,11 +1,11 @@
 describe('Biografia Page Tests', () => {
     it('Deve exibir biografia', () => {
-      cy.visit('http://localhost:8080/src/pages/biografia.html');
+      cy.visit('/src/pages/biografia.html');
       cy.contains('O Cientista do Espelho');
     });
   
     it('Deve haver imagens no carrossel e navegar corretamente', () => {
-      cy.visit('http://localhost:8080/src/pages/biografia.html');
+      cy.visit('/src/pages/biografia.html');
       
       cy.get('.carousel img').should('have.length.at.least', 3);
       
