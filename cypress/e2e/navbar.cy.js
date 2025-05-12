@@ -1,6 +1,6 @@
 describe('Navbar Tests', () => {
     it('Deve ter navbar funcional', () => {
-      cy.visit('/src/pages/');
+      cy.visit('/');
 
       cy.get('.navbar').should('be.visible');
 
