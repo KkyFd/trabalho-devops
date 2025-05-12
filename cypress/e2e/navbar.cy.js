@@ -1,6 +1,6 @@
 describe('Navbar Tests', () => {
     it('Deve ter navbar funcional', () => {
-      cy.visit('http://localhost:8080/src/pages/');
+      cy.visit('/src/pages/');
 
       cy.get('.navbar').should('be.visible');
 
