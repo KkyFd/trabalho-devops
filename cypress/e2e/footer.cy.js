@@ -1,6 +1,6 @@
 describe('Footer Tests', () => {
     it('Deve exibir copyright', () => {
-      cy.visit('/src/pages/index.html');
+      cy.visit('/');
       cy.get('.footer').should('contain', '©');
       cy.wait(500);
 
