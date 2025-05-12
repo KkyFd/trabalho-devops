@@ -1,4 +1,4 @@
-name: CI/CD para Yi Sang Portfolio
+name: CD
 
 on:
   push:
@@ -21,8 +21,8 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar testes
-        run: npm test
+      - name: Rodar testes Cypress antes da implantação
+        run: npx cypress run
 
   deploy:
     needs: build

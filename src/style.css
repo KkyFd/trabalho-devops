@@ -18,9 +18,13 @@ footer {
     color: #c4a77d;
 } */
 
+.bio {
+    text-shadow: 1px 1px 5px rgba(196, 167, 125, 0.5);
+}
+
 .text-muted {
     color: #c4a77d !important;
-    text-shadow: 1px 1px 5px rgba(196, 167, 125, 0.5);
+    text-shadow: 1px 1px 5px rgba(191, 238, 152, 0.5);
 }
 
 
