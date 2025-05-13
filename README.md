@@ -50,6 +50,25 @@ O site usa um **design minimalista e tecnológico**, inspirado nas interfaces da
 ✅ **Font Awesome** → Ícones personalizados.  
 ✅ **JavaScript** → Carrossel de imagens.  
 
+### 🧪 Como Rodar o Site Localmente
+
+✅ Pré-requisitos
+
+- Ter o **Node.js** instalado: [https://nodejs.org](https://nodejs.org)
+
+### ▶️ Passo a passo
+
+1. Abra o terminal na **pasta raiz do projeto**.
+2. Execute o seguinte comando para iniciar um servidor local:
+
+```bash
+npx http-server -p 8080
+```
+
+3. Acesse o site pelo navegador:
+
+[http://localhost:8080](http://localhost:8080)
+
 📜 Créditos e Referências
 
 Este projeto é inspirado no universo da Project Moon, criadores de Limbus Company, Library of Ruina e Lobotomy Corporation. Todos os direitos sobre personagens e conceitos pertencem à Project Moon.
