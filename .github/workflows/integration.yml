@@ -21,6 +21,9 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Instalar http-server
+        run: npm install --save-dev http-server
+
       - name: Instalar Cypress
         run: npx cypress install
 
