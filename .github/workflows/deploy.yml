@@ -21,8 +21,11 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar testes Cypress antes da implantação
-        run: npx cypress run
+      - name: Instalar http-server
+        run: npm install --save-dev http-server
+
+      - name: Rodar servidor e testes Cypress
+        run: npx start-server-and-test http-server 8080 'CYPRESS_ENV=local npx cypress run'
 
   deploy:
     needs: build
