@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const images = ["carousel-image1", "carousel-image2", "carousel-image3"];
+const images = ["carousel-image1", "carousel-image2", "carousel-image3", "carousel-image4"];
 
 function changeImage(direction) {
     document.querySelector(`.${images[currentIndex]}`).style.display = "none";
