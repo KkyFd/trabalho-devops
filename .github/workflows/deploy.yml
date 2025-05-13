@@ -21,8 +21,10 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Inicializar servidor local
-        run: npx http-server -p 8080
+      - name: Inicializar servidor local em segundo plano
+        run: |
+          npx http-server -p 8080 &
+          npx wait-on http://localhost:8080
 
       - name: Rodar testes Cypress antes da implantação
         run: npx cypress run
