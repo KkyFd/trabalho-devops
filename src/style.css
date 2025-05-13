@@ -2,6 +2,20 @@ body {
     background-color: #1a1a1a;
     color: #c4a77d;
     font-family: "Arial", sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url('./imgs/wings2.png') no-repeat center center; 
+    background-size: 110% auto;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .icon {
@@ -53,6 +67,11 @@ img {
     border-radius: 10px;
     border: 2px solid #8b5e3c;
 } 
+
+.img-fluid{
+    width: 500px;
+    height: 400px;
+}
 
 .carousel {
     position: relative;

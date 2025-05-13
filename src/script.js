@@ -10,3 +10,5 @@ function changeImage(direction) {
 
     document.querySelector(`.${images[currentIndex]}`).style.display = "block";
 }
+
+setInterval(() => changeImage(1), 3000);

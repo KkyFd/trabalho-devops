@@ -4,7 +4,7 @@ describe('Navbar Tests', () => {
 
       cy.get('.navbar').should('be.visible');
 
-      cy.get('.navbar-toggler').click();
+      cy.get('.navbar-toggler').click({ force: true });
       cy.get('.nav-link').contains('Projetos').click();
       cy.url().should('include', '/projetos.html');
       cy.wait(500);
