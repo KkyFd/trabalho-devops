@@ -28,4 +28,4 @@ jobs:
         run: npx cypress install
 
       - name: Rodar servidor e testes Cypress
-        run: npx start-server-and-test http-server 8080 'cypress run'
+        run: npx start-server-and-test http-server 8080 'CYPRESS_ENV=local npx cypress run'
